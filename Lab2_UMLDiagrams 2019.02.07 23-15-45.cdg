@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Lab2_UMLDiagrams">
+  <ClassDiagramComponents>
+    <Class name="Cash" package="lab2_umldiagrams" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="cashTendered" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCashTendered" returnType="int" visibility="public"/>
+        <Method name="setCashTendered" returnType="void" visibility="public"/>
+        <Method name="setAmount" returnType="void" visibility="public"/>
+        <Method name="getAmount" returnType="int" visibility="public"/>
+        <Method name="pay" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Check" package="lab2_umldiagrams" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="bankID" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setName" returnType="void" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setBankID" returnType="void" visibility="public"/>
+        <Method name="getBankID" returnType="String" visibility="public"/>
+        <Method name="authorized" returnType="void" visibility="public"/>
+        <Method name="setAmount" returnType="void" visibility="public"/>
+        <Method name="getAmount" returnType="int" visibility="public"/>
+        <Method name="pay" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Credit" package="lab2_umldiagrams" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="number" type="Object" visibility="private"/>
+        <Field name="type" type="Object" visibility="private"/>
+        <Field name="expDate" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNumber" returnType="int" visibility="public"/>
+        <Method name="setNumber" returnType="void" visibility="public"/>
+        <Method name="getType" returnType="int" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public"/>
+        <Method name="getExpDate" returnType="int" visibility="public"/>
+        <Method name="setExpDate" returnType="void" visibility="public"/>
+        <Method name="authorized" returnType="void" visibility="public"/>
+        <Method name="setAmount" returnType="void" visibility="public"/>
+        <Method name="getAmount" returnType="int" visibility="public"/>
+        <Method name="pay" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Customer" package="lab2_umldiagrams" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="Object" visibility="private"/>
+        <Field name="address" type="Object" visibility="private"/>
+        <Field name="order" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setName" returnType="void" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setAddress" returnType="void" visibility="public"/>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setOrder" returnType="void" visibility="public"/>
+        <Method name="getOrder" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Item" package="lab2_umldiagrams" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="price" type="int" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setPrice" returnType="void" visibility="public"/>
+        <Method name="getPrice" returnType="int" visibility="public"/>
+        <Method name="setDescription" returnType="void" visibility="public"/>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lab2_UMLDiagrams" package="lab2_umldiagrams" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Order" package="lab2_umldiagrams" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="date" type="String" visibility="private"/>
+        <Field name="status" type="String" visibility="private"/>
+        <Field name="customer" type="Customer" visibility="private"/>
+        <Field name="payment" type="Payment" visibility="private"/>
+        <Field name="orderdetail" type="OrderDetail" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getDate" returnType="int" visibility="public"/>
+        <Method name="setDate" returnType="void" visibility="public"/>
+        <Method name="getStatus" returnType="int" visibility="public"/>
+        <Method name="setStatus" returnType="void" visibility="public"/>
+        <Method name="getCustomer" returnType="int" visibility="public"/>
+        <Method name="setCustomer" returnType="void" visibility="public"/>
+        <Method name="getPayment" returnType="int" visibility="public"/>
+        <Method name="setPayment" returnType="void" visibility="public"/>
+        <Method name="getOrderdetail" returnType="int" visibility="public"/>
+        <Method name="setOrderdetail" returnType="void" visibility="public"/>
+        <Method name="calcTax" returnType="void" visibility="public"/>
+        <Method name="calcTotal" returnType="void" visibility="public"/>
+        <Method name="calcTotalWeight" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="OrderDetail" package="lab2_umldiagrams" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="taxStatus" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="calcSubTotal" returnType="void" visibility="public"/>
+        <Method name="calcWeight" returnType="void" visibility="public"/>
+        <Method name="getQuantity" returnType="int" visibility="public"/>
+        <Method name="setQuantity" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Payment" package="lab2_umldiagrams" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Methods>
+        <Method name="pay" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="orderdetail" source="lab2_umldiagrams.Order" target="lab2_umldiagrams.OrderDetail" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="lab2_umldiagrams.Credit" target="lab2_umldiagrams.Payment"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="lab2_umldiagrams.Check" target="lab2_umldiagrams.Payment"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="lab2_umldiagrams.Cash" target="lab2_umldiagrams.Payment"/>
+    <HasRelation name="payment" source="lab2_umldiagrams.Order" target="lab2_umldiagrams.Payment" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="customer" source="lab2_umldiagrams.Order" target="lab2_umldiagrams.Customer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
